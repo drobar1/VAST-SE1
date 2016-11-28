@@ -1,0 +1,116 @@
+<link href="css/bootstrap.min.css" rel="stylesheet">
+
+<html>
+
+<head>
+<cfparam name="form.bFirstName" default="VOID">
+<cfparam name="form.bLastName" default="VOID">
+<cfparam name="form.bAddress" default="VOID">
+<cfparam name="form.bCity" default="VOID">
+<cfparam name="form.bState" default="VOID">
+<cfparam name="form.bZip" default="VOID">
+<cfparam name="form.bEmail" default="VOID">
+
+<cfparam name="form.sFirstName" default="VOID">
+<cfparam name="form.sLastName" default="VOID">
+<cfparam name="form.sAddress" default="VOID">
+<cfparam name="form.sCity" default="VOID">
+<cfparam name="form.sState" default="VOID">
+<cfparam name="form.sZip" default="VOID">
+<cfparam name="form.sEmail" default="VOID">
+
+<cfparam name="form.docName" default="VOID">
+<cfparam name="form.docHos" default="VOID">
+<cfparam name="form.docNum" default="VOID">
+<cfparam name="form.docAlerg" default="VOID">
+
+<cfparam name="form.classA" default="VOID">
+<cfparam name="form.classB" default="VOID">
+<cfparam name="form.classC" default="VOID">
+<cfparam name="form.classD" default="VOID">
+<cfparam name="form.classE" default="VOID">
+
+
+<cfset TotalOrderAmount = 0>
+<cfset TotalItemAmount = 0>
+<cfset TotalTax = 0>
+<cfset ShippingTotal = 0>
+
+
+<form action="http://students.uwf.edu/dwr8/ShoppingCart/OrderConfirmation.cfm" method="post">
+<title>VAST</title>
+	<style>
+	
+	
+		  	header{
+					position: fixed;
+					width: 100%;
+					text-align: center;
+					font-size: 60px;
+					line-height: 85px;
+					height: 80px;
+					background-color: blue;
+					color: #fff;
+					font-family: 'PT Sans', sans-serif;
+					transition: all 0.9s ease;
+				}
+				
+				header.sticky {
+					font-size: 24px;
+					line-height: 48px;
+					height: 48px;
+					background: #efc47D;
+					text-align: center;
+					padding-left: 20px;
+				}
+			  
+			   th{
+					color: #0000ff;
+				}
+	</style>
+</head>
+
+	<center><header><b>Student Review </b></header></center><br><br><br><br><br>
+
+	
+<body> 
+
+	 
+	 
+ <table border="1" width="75%" align="center">
+ <thead>
+ <tr>
+	<th colspan="2">
+		Your Address and Payment Details
+	</th>
+	</tr>
+	<tr>
+     <cfoutput>
+      	
+			<td><b>Billing address:</td></b> 
+			<td width="80%">
+			#form.bFirstName# #form.bLastName# <br>
+			#form.bAddress# <br>
+			#form.bCity#, #form.bState# #form.bZip#<br>
+			<b>Email: </b>#form.bEmail#<br>
+			</td>
+			</tr>
+			<tr>
+			<td><b>Shipping address:</b></td>
+			<td>
+			#form.sFirstName# #form.sLastName# <br>
+			#form.sAddress#<br>
+			#form.sCity#, #form.sState# #form.sZip#<br>
+			<b>Email: </b>#form.sEmail#<br>
+			</td>
+			</tr>
+     </cfoutput>
+	 </thead>
+	 </table>
+	 <br><br><br><br>
+	 <p><center><input type="submit" value="Thank You"></center></p>
+</form>
+
+</body>
+</html>
+

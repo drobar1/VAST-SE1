@@ -1,0 +1,270 @@
+<html>
+	<!DOCTYPE html>
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<head>
+	<meta charset="utf-8" />
+	<title>VAST</title>
+	<meta name="viewport" content="initial-scale=1.0; maximum-scale=1.0; width=device-width;">
+		<style>
+			div.table-title {
+				display: block;
+				margin: auto;
+				max-width: 600px;
+				padding:5px;
+				width: 100%;
+			}
+			.table-title h3 {
+				color: #fafafa;
+				font-size: 30px;
+				font-weight: 400;
+				font-style:normal;
+				font-family: "Roboto", helvetica, arial, sans-serif;
+				text-shadow: -1px -1px 1px rgba(0, 0, 0, 0.1);
+				text-transform:uppercase;
+			}
+			.table-fill {
+				background: white;
+				border-radius:3px;
+				border-collapse: collapse;
+				height: 320px;
+				margin: auto;
+				max-width: 600px;
+				padding:5px;
+				width: 100%;
+				box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+				animation: float 5s infinite;
+			}
+			th {
+				color:#D5DDE5;;
+				background: #4682B4;
+				border-bottom:4px solid #9ea7af;
+				border-right: 1px solid #343a45;
+				font-size:23px;
+				font-weight: 100;
+				padding:24px;
+				text-align:left;
+				text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+				vertical-align:middle;
+			}
+			th:first-child {
+				border-top-left-radius:3px;
+			} 
+			th:last-child {
+				border-top-right-radius:3px;
+				border-right:none;
+			} 
+			tr {
+				border-top: 1px solid #C1C3D1;
+				border-bottom-: 1px solid #C1C3D1;
+				color:#666B85;
+				font-size:16px;
+				font-weight:normal;
+				text-shadow: 0 1px 1px rgba(256, 256, 256, 0.1);
+			} 
+			tr:hover td {
+				background:#4E5066;
+				color:#FFFFFF;
+				border-top: 1px solid #22262e;
+				border-bottom: 1px solid #22262e;
+			} 
+			tr:first-child {
+				border-top:none;
+			}
+			tr:last-child {
+				border-bottom:none;
+			} 
+			tr:nth-child(odd) td {
+				background:#EBEBEB;
+			}
+			tr:nth-child(odd):hover td {
+				background:#4E5066;
+			}
+			tr:last-child td:first-child {
+				border-bottom-left-radius:3px;
+			}
+			tr:last-child td:last-child {
+				border-bottom-right-radius:3px;
+			}
+			td {
+				background:#FFFFFF;
+				padding:20px;
+				text-align:left;
+				vertical-align:middle;
+				font-weight:300;
+				font-size:18px;
+				text-shadow: -1px -1px 1px rgba(0, 0, 0, 0.1);
+				border-right: 1px solid #C1C3D1;
+			}
+			td:last-child {
+				border-right: 0px;
+			}
+			th.text-left {
+				text-align: left;
+			}	
+			th.text-center {
+				text-align: center;
+			}
+			th.text-right {
+				text-align: right;
+			}
+			td.text-left {
+				text-align: left;
+			}
+			td.text-center {
+				text-align: center;
+			}
+			td.text-right {
+				text-align: right;
+			}
+		</style>
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js"></script>
+		<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+	</head>
+	<body>
+		
+		<!-- The Header Bar at the top -->
+		<nav id="myNavbar" class="navbar navbar-default navbar-inverse navbar-fixed-top" role="navigation">
+			<div class="container">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbarCollapse">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+				</div>
+				<div class="collapse navbar-collapse" id="navbarCollapse">
+					<ul class="nav navbar-nav">
+					<li><a href="http://students.uwf.edu/dwr8/FinalSE2ProjectT/InfoPage/3Dudes1Software.html" >Student Info</a></li>
+					<li class="active"><a href="http://students.uwf.edu/dwr8/FinalSE2ProjectT/ClassList/ClassList.html" >Class List</a></li>
+					<li><a href="http://students.uwf.edu/dwr8/FinalSE2ProjectT/StudentList/StudentList.html" >Student List</a></li>
+					<li>Sooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo</li>
+					<li><a href="http://students.uwf.edu/dwr8/FinalSE2ProjectT/NewInfo/NewStudent.cfm" >New Student</a></li>
+					<li><a href="http://students.uwf.edu/dwr8/FinalSE2ProjectT/loginPage/index.html" >Log In</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+					</br> </br>  </br> </br>
+					</ul>
+					
+		<!-- Displaying the info -->			
+		<center><p1>
+		<img src="http://students.uwf.edu/dwr8/FinalSE2Project/Images/loginLogo.png#" style="max-width:500%" alt="wired">
+	</p1></center>
+			<center><h4>Class List</h4></center>
+			<center><table id="Class" border='1'>
+				<tr>
+					<th>Class Abbreviation &emsp; </th>
+					<th>Class Name &emsp; &emsp; &emsp; &emsp; </th>
+					<th>Class Details &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp;</th>
+				</tr>
+				<tr>
+					<td>ENG108</td>
+					<td>9th Grade English</td>
+					<td>In this genre-based course, students sharpen their reading comprehension skills and analyze important themes in classic and modern works of American literature, including short stories, poetry, drama, and novels.</td>
+				</tr>
+				<tr>
+					<td>ENG208</td>
+					<td>9th Grade English</td>
+					<td>In this genre-based course, students sharpen their reading comprehension skills and analyze important themes in classic and modern works of American literature, including short stories, poetry, drama, and novels.</td>
+				</tr>
+				<tr>
+					<td>ENG500</td>
+					<td>AP English Language and Composition</td>
+					<td>Students learn to understand and analyze complex works by a variety of authors. They explore the richness of language, including syntax, imitation, word choice, and tone.</td>
+				</tr>
+				<tr>
+					<td>ENG010</td>
+					<td>Journalism (Elective)</td>
+					<td>Students are introduced to the historical importance of journalism in America. They study the basic principles of print and online journalism as they examine the role of printed news media in our society.</td>
+				</tr>
+				<tr>
+					<td>MTH122</td>
+					<td>Algebra 1</td>
+					<td>Students learn to identify the structure and properties of the real number system; complete operations with integers and other rational numbers</td>
+				</tr>
+				<tr>
+					<td>MTH202</td>
+					<td>Geometry</td>
+					<td>They build on ideas of inductive and deductive reasoning, logic, concepts, and techniques of Euclidean plane and solid geometry and develop an understanding of mathematical structure, method, and applications of Euclidean plane and solid geometry.</td>
+				</tr>
+				<tr>
+					<td>MTH500</td>
+					<td>AP Calculus AB</td>
+					<td> Calculus helps scientists, engineers, and financial analysts understand the complex relationships behind real-world phenomena.</td>
+				</tr>
+				<tr>
+					<td>BUS030</td>
+					<td>Personal Finance (Elective)</td>
+					<td>Students learn core skills in creating budgets, developing long-term financial plans to meet their goals, and making responsible choices about income and expenses.</td>
+				</tr>
+				<tr>
+					<td>SCI202</td>
+					<td>Biology</td>
+					<td>In this course, students focus on the chemistry of living things: the cell, genetics, evolution, the structure and function of living things, and ecology.</td>
+				<tr>
+					<td>SCI302</td>
+					<td>Chemistry</td>
+					<td>This course surveys all key areas of chemistry, including atomic structure, chemical bonding and reactions, solutions, stoichiometry, thermochemistry, organic chemistry, and nuclear chemistry.</td>
+				</tr>
+				<tr>
+					<td>SCI404</td>
+					<td>Honors Physics</td>
+					<td>This advanced course surveys all key areas: physical systems, measurement, kinematics, dynamics, momentum, energy, thermodynamics, waves, electricity, and magnetism, and introduces students to modern physics topics such as quantum theory and the atomic nucleus.</td>
+				</tr>
+				<tr>
+					<td>OTH032</td>
+					<td>Astronomy</td>
+					<td>This course introduces students to the study of astronomy, including its history and development, basic scientific laws of motion and gravity, the concepts of modern astronomy, and the methods used by astronomers to learn more about the universe.</td>
+				</tr>
+				<tr>
+					<td>HST102</td>
+					<td>World History</td>
+					<td>In this survey of world history from prehistoric to modern times, students focus on the key developments and events that have shaped civilization across time.</td>
+				</tr>
+				<tr>
+					<td>HST302</td>
+					<td>U.S. History</td>
+					<td>This course is a full-year survey that provides students with a view of American history from the first migrations of nomadic people to North America to recent events.</td>
+				</tr>
+				<tr>
+					<td>HST510</td>
+					<td>AP U.S. Goverment and Politics</td>
+					<td>This course is the equivalent of an introductory college-level course. Students explore the operations and structure of the U.S. government and the behavior of the electorate and politicians.</td>
+				</tr>
+				<tr>
+					<td>HST030</td>
+					<td>Economics (Elective)</td>
+					<td>Students are introduced to the basics of economic principles, and learn how to think like economists. They explore different economic systems, including the American free enterprise system, analyze and interpret data, and consider economic applications in today's world.</td>
+				</tr>
+				<tr>
+					<td>WLG100</td>
+					<td>Spanish 1</td>
+					<td>Students begin their introduction to Spanish by focusing on the four key areas of foreign language study: listening, speaking, reading, and writing.</td>
+				</tr>
+				<tr>
+					<td>WLG200</td>
+					<td>Spanish 2</td>
+					<td>Students continue their study of Spanish by further expanding their knowledge of key vocabulary topics and grammar concepts. </td>
+				</tr>
+				<tr>
+					<td>WLG110</td>
+					<td>French 1</td>
+					<td>Students begin their introduction to French by focusing on the four key areas of foreign language study: listening, speaking, reading, and writing.</td>
+				</tr>
+				<tr>
+					<td>WLG200</td>
+					<td>French 2</td>
+					<td>Students continue their study of French by further expanding their knowledge of key vocabulary topics and grammar concepts. </td>
+				</tr>
+			</table></center>
+
+		</br> </br></br> </br></br> </br></br> </br></br> </br></br>
+		This is a trademark of 3 Dudes 1 Software &trade; All code is avalible for use with permission from Daniel Robar. 
+	</body>

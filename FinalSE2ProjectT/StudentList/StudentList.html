@@ -1,0 +1,260 @@
+<html>
+	<!DOCTYPE html>
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<head>
+	<meta charset="utf-8" />
+	<title>VAST</title>
+	<meta name="viewport" content="initial-scale=1.0; maximum-scale=1.0; width=device-width;">
+		<style>
+			div.table-title {
+				display: block;
+				margin: auto;
+				max-width: 600px;
+				padding:5px;
+				width: 100%;
+			}
+			.table-title h3 {
+				color: #fafafa;
+				font-size: 30px;
+				font-weight: 400;
+				font-style:normal;
+				font-family: "Roboto", helvetica, arial, sans-serif;
+				text-shadow: -1px -1px 1px rgba(0, 0, 0, 0.1);
+				text-transform:uppercase;
+			}
+			.table-fill {
+				background: white;
+				border-radius:3px;
+				border-collapse: collapse;
+				height: 320px;
+				margin: auto;
+				max-width: 600px;
+				padding:5px;
+				width: 100%;
+				box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+				animation: float 5s infinite;
+			}
+			th {
+				color:#D5DDE5;;
+				background: #4682B4;
+				border-bottom:4px solid #9ea7af;
+				border-right: 1px solid #343a45;
+				font-size:23px;
+				font-weight: 100;
+				padding:24px;
+				text-align:left;
+				text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+				vertical-align:middle;
+			}
+			th:first-child {
+				border-top-left-radius:3px;
+			} 
+			th:last-child {
+				border-top-right-radius:3px;
+				border-right:none;
+			} 
+			tr {
+				border-top: 1px solid #C1C3D1;
+				border-bottom-: 1px solid #C1C3D1;
+				color:#666B85;
+				font-size:16px;
+				font-weight:normal;
+				text-shadow: 0 1px 1px rgba(256, 256, 256, 0.1);
+			} 
+			tr:hover td {
+				background:#4E5066;
+				color:#FFFFFF;
+				border-top: 1px solid #22262e;
+				border-bottom: 1px solid #22262e;
+			} 
+			tr:first-child {
+				border-top:none;
+			}
+			tr:last-child {
+				border-bottom:none;
+			} 
+			tr:nth-child(odd) td {
+				background:#EBEBEB;
+			}
+			tr:nth-child(odd):hover td {
+				background:#4E5066;
+			}
+			tr:last-child td:first-child {
+				border-bottom-left-radius:3px;
+			}
+			tr:last-child td:last-child {
+				border-bottom-right-radius:3px;
+			}
+			td {
+				background:#FFFFFF;
+				padding:20px;
+				text-align:left;
+				vertical-align:middle;
+				font-weight:300;
+				font-size:18px;
+				text-shadow: -1px -1px 1px rgba(0, 0, 0, 0.1);
+				border-right: 1px solid #C1C3D1;
+			}
+			td:last-child {
+				border-right: 0px;
+			}
+			th.text-left {
+				text-align: left;
+			}	
+			th.text-center {
+				text-align: center;
+			}
+			th.text-right {
+				text-align: right;
+			}
+			td.text-left {
+				text-align: left;
+			}
+			td.text-center {
+				text-align: center;
+			}
+			td.text-right {
+				text-align: right;
+			}
+		</style>
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js"></script>
+		<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function() {
+				$('#form').submit( function(event) {
+				var student = $("#sName").val();
+				var Classes = $("#Classes").val();
+
+					$.ajax({
+						type: "GET",
+						url: "Gallery.xml",
+						dataType: "xml",
+						success: function(xml){
+							var $stud;
+							
+							<!-- Class Varibles -->
+							var Class;
+							var xmlKey;
+							
+							<!-- Student Varibles -->
+							var name;
+							var address;
+							var gpa;
+							var image;
+							var xmlImage;
+							var result;
+							
+							<!-- Medical Varibles -->
+							var doctor;
+							var hospital;
+							var allergy;
+							var dnum;
+							
+							<!-- Parent Varibles -->
+							var pname;
+							var pnum;
+							var paddress;
+							
+							$(xml).find('Stud').each(function() {
+								$stud = $(this);
+								
+								<!-- Student Functions -->
+								name = $stud.find('Student').attr('Name');
+								address = $stud.find('Address').text();
+								gpa = $stud.find('GPA').text();
+								image = $stud.find('Image').text();
+								xmlImage = image;
+								result = xmlImage.link(image);
+								
+								<!-- Class Functions -->
+								xmlKey = $stud.find('Classes').text();
+								$($stud).find('Class').each(function() {Class = ($(this).text());
+								
+								<!-- Medical Functions -->
+								doctor = $stud.find('Doctor').text();
+								hospital = $stud.find('Hospital').text();
+								dnum = $stud.find('dNum').text();
+								allergy = $stud.find('Allergy').text();
+								
+								<!-- Parent Functions -->
+								pname = $stud.find('pName').text();
+								pnum = $stud.find('pNum').text();
+								paddress = $stud.find('pAddress').text();
+								
+
+
+								
+									<!-- Search Bar -->
+									if(student === name){
+										$('<tr>').append($('<td>').text(name), $('<td>').text(xmlKey), $('<td>').text(gpa)).appendTo('#studentCall');
+										return( false );
+									}
+									
+									else if(student === ""){ 
+										$('<tr>').append($('<td>').text(name), $('<td>').text(xmlKey), $('<td>').text(gpa)).appendTo('#studentCall');
+										return( false );										
+									}
+									
+									else{}
+								});
+							});
+						}
+					});
+				event.preventDefault();
+				});
+			});
+		</script>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+	</head>
+	<body>
+		
+		<!-- The Header Bar at the top -->
+		<nav id="myNavbar" class="navbar navbar-default navbar-inverse navbar-fixed-top" role="navigation">
+			<div class="container">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbarCollapse">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+				</div>
+				<div class="collapse navbar-collapse" id="navbarCollapse">
+					<ul class="nav navbar-nav">
+					<li><a href="http://students.uwf.edu/dwr8/FinalSE2ProjectT/InfoPage/3Dudes1Software.html" >Student Info</a></li>
+					<li><a href="http://students.uwf.edu/dwr8/FinalSE2ProjectT/ClassList/ClassList.html" >Class List</a></li>
+					<li class="active"><a href="http://students.uwf.edu/dwr8/FinalSE2ProjectT/StudentList/StudentList.html" >Student List</a></li>
+					<li>Sooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo</li>
+					<li><a href="http://students.uwf.edu/dwr8/FinalSE2ProjectT/NewInfo/NewStudent.cfm" >New Student</a></li>
+					<li><a href="http://students.uwf.edu/dwr8/FinalSE2ProjectT/loginPage/index.html" >Log In</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+					</br> </br>  </br> </br>
+					</ul>
+					
+		<!-- Displaying the info -->			
+		<center><p1>
+		<img src="http://students.uwf.edu/dwr8/FinalSE2Project/Images/loginLogo.png#" style="max-width:500%" alt="wired">
+	</p1></center>
+		<form id="form" action="" method="get">
+			List: <INPUT TYPE="text" VALUE=""  id="sName">
+			<input type="submit" value="Populate"></input> </br> </br>
+			</br> </br> 
+			<center><h4>Student List</h4>
+			<table id="studentCall" border='1'>
+				<tr>
+					<th>Name &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp;</th>
+					<th>Classes &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp;</th>
+					<th>GPA &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp;</th>
+				</tr>
+			</table><center>
+		</form>
+		</br> </br></br> </br></br> </br></br> </br></br> </br></br>
+		This is a trademark of 3 Dudes 1 Software &trade; All code is avalible for use with permission from Daniel Robar. 
+	</body>

@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="Gallery.xsl"?>
+
+<Gallery  xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xsi:noNamespaceSchemaLocation='GallerySchema.xsd'>
+    <Stud>
+		<Student Name="Daniel Robize"></Student>
+		<Image>https://s13.postimg.org/88snxz7p3/alpaca_1672647_640.jpg</Image>
+		<Address>9320 Chisholm rd</Address>
+		<GPA>3.7</GPA>
+		<Doctor>BW</Doctor>
+		<Hospital>Animal</Hospital>
+		<dNum>543-8752</dNum>
+		<Allergy>NA</Allergy>
+		<Classes>
+			<Class>DTW3500</Class>
+			<Class>COT4000</Class>
+			<Class>BAL3276</Class>
+			<Class>CEN2007</Class>
+			<Class>ACC3050</Class>
+		</Classes>
+		<pName>DTW3500</pName>
+		<pNum>BW</pNum>
+		<pAddress>BW</pAddress>
+    </Stud>
+	
+	
+	
+	<Stud>
+		<Student Name="Michael Jordan"></Student>
+		<Image>https://s13.postimg.org/88snxz7p3/alpaca_1672647_640.jpg</Image>
+		<Address>23 Ball Blvd</Address>
+		<GPA>3.8</GPA>
+		<Doctor>BW</Doctor>
+		<Hospital>Animal</Hospital>
+		<dNum>342-9834</dNum>
+		<Allergy>NA</Allergy>
+		<Classes>
+			<Class>DTW3500</Class>
+			<Class>WJD3920</Class>
+			<Class>FJD3212</Class>
+			<Class>JEK3432</Class>
+			<Class>EKD2334</Class>
+		</Classes>
+		<pName>DTW3500</pName>
+		<pNum>BW</pNum>
+		<pAddress>BW</pAddress>
+    </Stud>
+	
+	<Stud>
+		<Student Name="Mary Smith"></Student>
+		<Image>https://s13.postimg.org/88snxz7p3/alpaca_1672647_640.jpg</Image>
+		<Address>9870 Huntington Drive</Address>
+		<GPA>3.4</GPA>
+		<Doctor>BW</Doctor>
+		<Hospital>Animal</Hospital>
+		<dNum>523-8642</dNum>
+		<Allergy>Shellfish</Allergy>
+		<Classes>
+			<Class>DTW3500</Class>
+			<Class>HCR3400</Class>
+			<Class>BEA2078</Class>
+			<Class>HUR3029</Class>
+			<Class>JED3028</Class>
+		</Classes>
+		<ParentContact>
+		<pName>DTW3500</pName>
+		<pNum>BW</pNum>
+		<pAddress>BW</pAddress>
+		</ParentContact>
+    </Stud>
+	
+	<Stud>
+		<Student Name="Paul Williams"></Student>
+		<Image>https://s13.postimg.org/88snxz7p3/alpaca_1672647_640.jpg</Image>
+		<Address>6893 Green Drive</Address>
+		<GPA>2.7</GPA>
+		<Doctor>BW</Doctor>
+		<Hospital>Animal</Hospital>
+		<dNum>948-8943</dNum>
+		<Allergy>NA</Allergy>
+		<Classes>
+			<Class>DTW3500</Class>
+			<Class>BWA4032</Class>
+			<Class>ICP4200</Class>
+			<Class>IDC2690</Class>
+			<Class>OMG3666</Class>
+		</Classes>
+		<pName>DTW3500</pName>
+		<pNum>BW</pNum>
+		<pAddress>BW</pAddress>
+    </Stud>
+	
+	<Stud>
+		<Student Name="Ian Knowles"></Student>
+		<Image>https://s13.postimg.org/88snxz7p3/alpaca_1672647_640.jpg</Image>
+		<Address>1671 College Blvd</Address>
+		<GPA>4.0</GPA>
+		<Doctor>BW</Doctor>
+		<Hospital>Animal</Hospital>
+		<dNum>53854</dNum>
+		<Allergy>NA</Allergy>
+		<Classes>
+			<Class>DTW3500</Class>
+			<Class>JDF4059</Class>
+			<Class>WJE3940</Class>
+			<Class>WHD3023</Class>
+			<Class>ASD2049</Class>
+		</Classes>
+		<pName>DTW3500</pName>
+		<pNum>BW</pNum>
+		<pAddress>BW</pAddress>
+    </Stud>
+	
+	<Stud>
+		<Student Name="Dan Marino"></Student>
+		<Image>https://s13.postimg.org/88snxz7p3/alpaca_1672647_640.jpg</Image>
+		<Address>5850 Dolphin Way</Address>
+		<GPA>3.1</GPA>
+		<Doctor>BW</Doctor>
+		<Hospital>Animal</Hospital>
+		<dNum>857-3434</dNum>
+		<Allergy>NA</Allergy>
+		<Classes>
+			<Class>DTW3500</Class>
+			<Class>JFJ3432</Class>
+			<Class>JRK2334</Class>
+			<Class>WEW4090</Class>
+			<Class>DKD3009</Class>
+		</Classes>
+		<pName>DTW3500</pName>
+		<pNum>BW</pNum>
+		<pAddress>BW</pAddress>
+    </Stud>
+	
+	<Stud>
+		<Student Name="Tom Walker"></Student>
+		<Image>https://s13.postimg.org/88snxz7p3/alpaca_1672647_640.jpg</Image>
+		<Address>1812 Sandra Road</Address>
+		<GPA>3.0</GPA>
+		<Doctor>BW</Doctor>
+		<Hospital>Animal</Hospital>
+		<dNum>869-9832</dNum>
+		<Allergy>Peanut</Allergy>
+		<Classes>
+			<Class>DTW3500</Class>
+			<Class>JAK2231</Class>
+			<Class>KWE4323</Class>
+			<Class>IJK3224</Class>
+			<Class>CEN3040</Class>
+		</Classes>
+		<pName>DTW3500</pName>
+		<pNum>BW</pNum>
+		<pAddress>BW</pAddress>
+    </Stud>
+	
+	<Stud>
+		<Student Name="Wolf Winter"></Student>
+		<Image>https://s13.postimg.org/88snxz7p3/alpaca_1672647_640.jpg</Image>
+		<Address>9320 Chisholm rd</Address>
+		<GPA>3.7</GPA>
+		<Doctor>BW</Doctor>
+		<Hospital>Animal</Hospital>
+		<dNum>857-4269</dNum>
+		<Allergy>NA</Allergy>
+		<Classes>
+			<Class>DTW3500</Class>
+			<Class>JKE3920</Class>
+			<Class>HIW3092</Class>
+			<Class>OEW2043</Class>
+			<Class>KWS2093</Class>
+		</Classes>
+		<pName>DTW3500</pName>
+		<pNum>BW</pNum>
+		<pAddress>BW</pAddress>
+    </Stud>
+	
+	<Stud>
+		<Student Name="Felicia Hawkins"></Student>
+		<Image>https://s13.postimg.org/88snxz7p3/alpaca_1672647_640.jpg</Image>
+		<Address>453 Hallmark Rd</Address>
+		<GPA>3.9</GPA>
+		<Doctor>BW</Doctor>
+		<Hospital>Animal</Hospital>
+		<dNum>649-9832</dNum>
+		<Allergy>NA</Allergy>
+		<Classes>
+			<Class>DTW3500</Class>
+			<Class>HJI3982</Class>
+			<Class>IUH3892</Class>
+			<Class>UIH2893</Class>
+			<Class>YWH2393</Class>
+		</Classes>
+		<pName>DTW3500</pName>
+		<pNum>BW</pNum>
+		<pAddress>BW</pAddress>
+    </Stud>
+	
+	<Stud>
+		<Student Name="Julia Henning"></Student>
+		<Image>https://s13.postimg.org/88snxz7p3/alpaca_1672647_640.jpg</Image>
+		<Address>3560 Dunfries Rd</Address>
+		<GPA>2.8</GPA>
+		<Doctor>BW</Doctor>
+		<Hospital>Animal</Hospital>
+		<dNum>958-8032</dNum>
+		<Allergy>Latex</Allergy>
+		<Classes>
+			<Class>DTW3500</Class>
+			<Class>FYI3070</Class>
+			<Class>TFW4050</Class>
+			<Class>SMH2000</Class>
+			<Class>TMI4032</Class>
+		</Classes>
+		<pName>DTW3500</pName>
+		<pNum>BW</pNum>
+		<pAddress>BW</pAddress>
+    </Stud>
+	
+	
+</Gallery>
